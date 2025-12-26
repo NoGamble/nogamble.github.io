@@ -25,9 +25,12 @@ fun_features:
 
 navbar:
   blog_title: "Via NoGamble"
+  bg_alpha: 0.0
   menu:
     - { key: 'home', link: '/', icon: 'iconfont icon-home-fill', name: 'Home' }
     - { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill', name: 'Tags' }
+    - { key: 'archive', link: '/archives/', icon: 'iconfont icon-archive-fill', name: 'Archives' }
+    - { key: 'category', link: '/categories/', icon: 'iconfont icon-category-fill', name: 'Categories' }
     - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill', name: 'Contact' }
 
 dark_mode:
@@ -42,3 +45,15 @@ open_graph:
   google_plus:
   fb_admins:
   fb_app_id:
+
+favicon: /img/favicon.png
+
+about:
+  avatar: /img/favicon.png
+  name: "NoGamble"
+  intro: "UESTC CS Junior | Forza Milan!"
+
+page:
+  banner_img: /img/default.png
+  banner_img_height: 70
+  banner_mask_alpha: 0.3

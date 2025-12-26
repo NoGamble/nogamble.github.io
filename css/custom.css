@@ -1,0 +1,9 @@
+.navbar {
+    background-color: #000000 !important;
+  }
+
+  .index-header .header-inner .slogan {
+    font-size: 5rem !important;  /* 默认约 1.5rem，你可以根据需要调大，如 3rem */
+    font-weight: bold;             /* 如果想加粗可以加上这行 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 加上阴影可以让文字在背景图上更清晰 */
+  }

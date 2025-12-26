@@ -2,31 +2,43 @@
 # Fluid 个性化定制
 # --------------------------------------
 
-# 1. 首页背景与遮罩
+
 index:
-  # 背景图路径（确保你把图片放到了 source/img/home_bg.jpg）
   banner_img: /img/background.png
-  # 首页副标题（打字机效果）
-  banner_subtitle: "UESTC CS Junior | Forza Milan!"
-  typing: true
+  banner_text: "Via NoGamble"
+  slogan:
+    enable: true
+    text: "This is Via NoGamble." # 在这里填入你的副标题
+    api:
+      enable: false # 暂时关闭 API，先确保显示你自己的文字
+  post_url_target: _self # 设置首页文章链接打开方式，_self 为当前窗口打开，_blank 为新窗口打开
+  auto_excerpt:
+    enable: true
 
-# 2. 全局遮罩效果
-banner:
-  # 遮罩透明度，0.4 左右能让白色文字在任何背景下都很清晰
-  mask_alpha: 0.4 
-  # 开启视差滚动效果
-  parallax: true 
 
-# 3. 字体配置 (Google Fonts)
-font:
-  font_size: 16px
-  code_font_size: 14px
+fun_features:
+  typing: # 为 subtitle 添加打字机效果
+    enable: true
+    typeSpeed: 100 # 打印速度
+    cursorChar: "_" # 游标字符
+    loop: false # 是否循环播放效果
 
-custom_font:
+navbar:
+  blog_title: "Via NoGamble"
+  menu:
+    - { key: 'home', link: '/', icon: 'iconfont icon-home-fill', name: 'Home' }
+    - { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill', name: 'Tags' }
+    - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill', name: 'Contact' }
+
+dark_mode:
   enable: true
-  # 引入 Noto Sans SC (正文) 和 JetBrains Mono (代码)
-  link: 'https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;700&display=swap'
-  # 全局字体
-  font_family: '"Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif'
-  # 代码字体
-  code_font_family: '"JetBrains Mono", monospace'
+  default: light
+
+open_graph:
+  enable: true
+  twitter_card: summary_large_image
+  twitter_id:
+  twitter_site:
+  google_plus:
+  fb_admins:
+  fb_app_id:

@@ -2,8 +2,8 @@
 title: 'Segment Fault of Love: Sun Ruiheng'
 date: 2025-12-26 15:42:45
 tags:
-index_img: /img/l.jpg
-banner_img: /img/srh.jpg
+index_img: /img/srhindex.jpg
+banner_img: /img/srhback.jpg
 categories:
   - 情感史
 ---

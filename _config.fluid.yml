@@ -11,6 +11,7 @@ index:
     text: "This is Via NoGamble." # 在这里填入你的副标题
     api:
       enable: false # 暂时关闭 API，先确保显示你自己的文字
+    font-size: 40px
   post_url_target: _self # 设置首页文章链接打开方式，_self 为当前窗口打开，_blank 为新窗口打开
   auto_excerpt:
     enable: true
@@ -53,7 +54,31 @@ about:
   name: "NoGamble"
   intro: "UESTC CS Junior | Forza Milan!"
 
-page:
-  banner_img: /img/default.png
-  banner_img_height: 70
-  banner_mask_alpha: 0.3
+category:
+  enable: true
+  banner_img: /img/background.png
+  slogan:
+    enable: true
+    text: "Categories."
+  api:
+      enable: false
+
+tag:
+  enable: true
+  banner_img: /img/background.png
+  slogan:
+    enable: true
+    text: "Tags."
+  api:
+      enable: false
+
+archive:
+  enable: true
+  banner_img: /img/background.png
+  slogan:
+    enable: true
+    text: "Archives."
+  api:
+      enable: false
+
+custom_css: [/css/custom.css]

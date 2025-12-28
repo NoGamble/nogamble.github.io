@@ -1,71 +1,67 @@
-/* 全局平滑滚动 */
 html {
-  scroll-behavior: smooth;
-}
-
-.navbar {
+    scroll-behavior: smooth;
+  }
+  
+  .navbar {
     background-color: #000000 !important;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     transition: background-color 0.3s ease;
   }
-
+  
   .index-header .header-inner .slogan {
-    font-size: 5rem !important;  /* 默认约 1.5rem，你可以根据需要调大，如 3rem */
-    font-weight: bold;             /* 如果想加粗可以加上这行 */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 加上阴影可以让文字在背景图上更清晰 */
+    font-size: 5rem !important;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .index-card {
+    animation: fadeInUp 0.8s ease-out both;
+    /* 增加卡片内边距，使内容（图片）不再贴死边缘 */
+    padding: 0.8rem !important;
+    border-radius: 12px !important;
+    background-color: #ffffff;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+    margin-bottom: 0.8rem !important;
   }
 
-  /* 首页文章卡片淡入向上动画 */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
+  .index-card .index-img img {
+    height: 180px !important;
+    object-fit: cover;
+    border-radius: 8px !important;
+    transition: filter 0.5s ease !important;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  
+  .index-card:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12) !important;
   }
-}
 
-.index-card {
-  animation: fadeInUp 0.8s ease-out both;
-  /* 如果你想限制卡片的最大宽度，可以取消下面一行的注释 */
-  /* max-width: 900px; */
-  /* margin-left: auto; */
-  /* margin-right: auto; */
-}
-
-/* 调整卡片内图片的比例/高度 */
-.index-card .row .col-md-4 img {
-  height: 180px; /* 固定图片高度 */
-  object-fit: cover; /* 确保图片不缩放变形 */
-}
-
-/* 文章卡片悬停升起效果 */
-.index-card:hover {
-  transform: translateY(-8px) !important;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
-  transition: all 0.3s ease-in-out;
-}
-
-/* 1. 撤销之前的父容器居中，防止正文被误伤 */
+/* Hexo Blog Encrypt 插件按钮居中样式调整 */
 html body #hexo-blog-encrypt {
-    text-align: left !important; /* 确保正文恢复左对齐（或默认对齐） */
+    text-align: left !important; 
 }
 
-/* 2. 精准定位按钮并实现块级居中 */
+/* 精准定位按钮并实现块级居中 */
 html body #hexo-blog-encrypt .hbe-button {
     all: unset !important;
     box-sizing: border-box !important;
     
-    /* --- 居中核心逻辑 --- */
-    display: block !important;    /* 必须设为块级元素，margin: auto 才会生效 */
-    margin: 40px auto !important; /* 上下预留 40px 间距，左右自动平分实现居中 */
-    width: fit-content !important; /* 宽度仅包裹内容，不再占满全屏 */
-    /* ------------------ */
+    display: block !important;   
+    margin: 40px auto !important;
+    width: fit-content !important; 
 
-    /* 简约黑白视觉 */
     background-color: #000000 !important;
     color: #ffffff !important;
     border: 1px solid #000000 !important;
@@ -79,7 +75,6 @@ html body #hexo-blog-encrypt .hbe-button {
     transition: all 0.3s ease !important;
 }
 
-/* 悬停反色 */
 html body #hexo-blog-encrypt .hbe-button:hover {
     background-color: #ffffff !important;
     color: #000000 !important;

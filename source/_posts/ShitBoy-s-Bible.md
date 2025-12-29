@@ -1,7 +1,7 @@
 ---
 title: ShitBoy's Bible
 date: 2025-12-26 15:09:41
-tags:
+tags: 秘密
 index_img: /img/kiss.jpg
 banner_img: /img/kiss.jpg
 categories:

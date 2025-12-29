@@ -103,9 +103,9 @@ theme: fluid
 deploy:
   type: ''
 
-encrypt: # hexo-blog-encrypt 配置
+encrypt: # hexo-blog-encrypt
   silent: true                # 编译时不在控制台显示加密日志
-  abstract: "这篇博客涉及作者或作者朋友的隐私，请输入密码查看。" # 首页显示的摘要
-  message: "请输入密码以继续阅读。"     # 输入框上方的提示
-  wrong_pass_message: "抱歉，密码错误，请重试。"   # 密码输错时的提示
-  theme: wave             # 加密页面的主题，你可以选 wave, xray 等
+  abstract: "这篇博客涉及作者或作者朋友的隐私，请输入密码查看。"
+  message: "请输入密码以继续阅读。"
+  wrong_pass_message: "抱歉，密码错误，请重试。"
+  theme: wave

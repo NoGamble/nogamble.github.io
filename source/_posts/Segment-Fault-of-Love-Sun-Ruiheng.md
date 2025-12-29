@@ -1,7 +1,7 @@
 ---
 title: 'Segment Fault of Love: Sun Ruiheng'
 date: 2025-12-26 15:42:45
-tags:
+tags: 秘密
 index_img: /img/srhindex.jpg
 banner_img: /img/srhback.jpg
 categories:
@@ -13,10 +13,13 @@ theme: wave
 这篇文章是关于srh的情感坎坷经历，只有鼓励，不允许贬低。就像本人自己说的：“不是结束，而是开始罢了。也不是失败，只是成功的垫脚石，成功的母亲。”
 <!-- more -->
 ---
+# 🔮 谁是SRH
+srh是作者的高中同学，现就读于南京大学赫-尔辛基大学中外合办，大气科学专业。
 # 初探
+在srh大一的时候的时候，经过室友中药哥的关系，认识了中药哥女朋友的朋友，来自南审的四级姐。这是srh大学时光里第一次尝试。然而第一次尝试，往往都是以失败告终的
 ## 基本信息
 **姓名：四级姐**
-真名忘了 考不过四级 直接上照片：
+新疆人，真名忘了，srh本人取的外号，原因是考不过四级 直接上照片：
 <div align="center">
   <img src="/img/l11.jpg" width="30%">
 </div>

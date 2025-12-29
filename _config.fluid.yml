@@ -83,5 +83,9 @@ archive:
   api:
       enable: false
 
-custom_css: [/css/custom.css]
+custom_css: 
+  - /css/custom.css
+  - /css/encrypt.css
+  - /css/link.css
+  
 custom_js: [/js/custom.js]

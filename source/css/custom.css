@@ -28,7 +28,7 @@ html {
   
   .index-card {
     animation: fadeInUp 0.8s ease-out both;
-    /* 增加卡片内边距，使内容（图片）不再贴死边缘 */
+    /* 增加卡片内边距，不再贴死边缘 */
     padding: 0.8rem !important;
     border-radius: 12px !important;
     background-color: #ffffff;

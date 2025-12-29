@@ -1,0 +1,36 @@
+/* 资源链接卡片化 - 改进版 */
+/* 使用 :not 选择器排除掉包含 checkbox 的列表项，避免干扰 Tips 里的任务列表 */
+.post-content ul li:not(:has(input[type="checkbox"])) {
+    list-style: none;
+    background: #f8f9fa;
+    border-left: 4px solid #000;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: transform 0.2s;
+    /* 解决由于隐藏 list-style 导致的缩进问题 */
+    margin-left: 0; 
+}
+
+/* 仅对非任务列表的项应用悬停效果 */
+.post-content ul li:not(:has(input[type="checkbox"])):hover {
+    transform: translateX(5px);
+    background: #f1f1f1;
+}
+
+/* 针对任务列表（Tips部分）的专门微调，确保它们整齐 */
+.post-content ul li:has(input[type="checkbox"]) {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 5px;
+    background: none !important; /* 确保没有背景色 */
+    border: none !important;     /* 确保没有边框 */
+    transform: none !important;  /* 确保不会位移 */
+}
+
+/* 保持链接样式 */
+.post-content ul li:not(:has(input[type="checkbox"])) a {
+    font-weight: bold;
+    color: #000 !important;
+    text-decoration: none;
+}
